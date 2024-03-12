@@ -5,13 +5,14 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Restaurantly Bootstrap Template - Index</title>
+  <title>Olivia Empanadas & Pizzas</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -112,9 +113,9 @@
           <h2>Empanadas & Pizzas</h2>
 
           <div class="btns">
-            <a href="#menu" class="btn-menu animated fadeInUp scrollto">Descargar Menú</a>
-            <a href="#book-a-table" class="btn-book animated fadeInUp scrollto" style="margin: 2% 0 0 0;">Pedir por WhatsApp</a>
-            <a href="#book-a-table" class="btn-book animated fadeInUp scrollto" style="margin: 2% 0 0 0;">Pedir por TePido</a>
+            <a href="assets/menu/empanadas-pizzas-precios-enero-2024.pdf" target="_blank" class="btn-menu animated fadeInUp scrollto">Descargar Menú</a>
+            <a href="https://www.monline.com.ar/OliviaEmpanadasSucursales" class="btn-book animated fadeInUp scrollto" target="_blank" style="margin: 2% 0 0 0;">Pedir por WhatsApp</a>
+            <a href="#book-a-table" class="btn-book animated fadeInUp scrollto" target="_blank" style="margin: 2% 0 0 0;">Pedir por TePido</a>
           </div>
         </div>
         <!--<div class="col-lg-4 d-flex align-items-center justify-content-center position-relative" data-aos="zoom-in" data-aos-delay="200">
@@ -472,7 +473,7 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3276.2130174319586!2d-58.40885448431558!3d-34.800582275449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd30d890b9abb%3A0x13bdf3fe2336108c!2sAv.%20Amenedo%20101%2C%20B1846DGD%20Adrogu%C3%A9%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1590495855337!5m2!1ses-419!2sar" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
               </div>
               <p class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                <button id="btnAdrogué" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                   Adrogué
                 </button>
               </p>
@@ -486,7 +487,7 @@
                   </div>
                   <div class="row">
                     <div class="col-lg-12 text-center order-1 order-lg-2" style="min-height: 30rem;">
-                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3276.2130174319586!2d-58.40885448431558!3d-34.800582275449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd30d890b9abb%3A0x13bdf3fe2336108c!2sAv.%20Amenedo%20101%2C%20B1846DGD%20Adrogu%C3%A9%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1590495855337!5m2!1ses-419!2sar" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                      <iframe id="mapAdrogue" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3276.2130174319586!2d-58.40885448431558!3d-34.800582275449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd30d890b9abb%3A0x13bdf3fe2336108c!2sAv.%20Amenedo%20101%2C%20B1846DGD%20Adrogu%C3%A9%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1590495855337!5m2!1ses-419!2sar" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                     </div>
                   </div>
                 </div>
@@ -494,7 +495,7 @@
             </div>
             <div class="accordion-item">
               <p class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                <button id="btnAvellaneda" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                   Avellaneda
                 </button>
               </p>
@@ -502,13 +503,13 @@
                 <div class="accordion-body">
                   <div class="row">
                     <div class="col-lg-12 details order-2 order-lg-1">
-                      <h3>Amenedo 101</h3>
-                      <p class="fst-italic">Tel: 4976-5324 / 6089-0272</p>
+                      <h3>Av. Mitre 2176</h3>
+                      <p class="fst-italic">Tel: 4203-0495 / 4203-4619</p>
                     </div>
                   </div>
                   <div class="row">
                     <div class="col-lg-12 text-center order-1 order-lg-2" style="min-height: 30rem;">
-                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3276.2130174319586!2d-58.40885448431558!3d-34.800582275449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd30d890b9abb%3A0x13bdf3fe2336108c!2sAv.%20Amenedo%20101%2C%20B1846DGD%20Adrogu%C3%A9%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1590495855337!5m2!1ses-419!2sar" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                      <iframe id="mapAvellaneda" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.3329040808376!2d-58.354509384333916!3d-34.671546580441955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3333ee176c6cd%3A0xf9841fd057e585f!2sAv.%20Bartolom%C3%A9%20Mitre%202176%2C%20B1873AMH%20Crucecita%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1629399478257!5m2!1ses-419!2sar" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                     </div>
                   </div>
                 </div>
@@ -524,8 +525,8 @@
                 <div class="accordion-body">
                   <div class="row">
                     <div class="col-lg-12 details order-2 order-lg-1">
-                      <h3>Amenedo 101</h3>
-                      <p class="fst-italic">Tel: 4976-5324 / 6089-0272</p>
+                      <h3>Avenida Patricios 233</h3>
+                      <p class="fst-italic">Tel: 11-3397-4147 / 11-3397-40</p>
                     </div>
                   </div>
                   <div class="row">
@@ -539,15 +540,15 @@
             <div class="accordion-item">
               <p class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse5" aria-expanded="false" aria-controls="flush-collapseThree">
-                  Barracas
+                  Benal Este
                 </button>
               </p>
               <div id="flush-collapse5" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                 <div class="accordion-body">
                   <div class="row">
                     <div class="col-lg-12 details order-2 order-lg-1">
-                      <h3>Amenedo 101</h3>
-                      <p class="fst-italic">Tel: 4976-5324 / 6089-0272</p>
+                      <h3>Cramer 893, Bernal</h3>
+                      <p class="fst-italic">Tel: 3750-0093 - 3998-1043</p>
                     </div>
                   </div>
                   <div class="row">
@@ -561,15 +562,15 @@
             <div class="accordion-item">
               <p class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse6" aria-expanded="false" aria-controls="flush-collapseThree">
-                  Barracas
+                  City Bell
                 </button>
               </p>
               <div id="flush-collapse6" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                 <div class="accordion-body">
                   <div class="row">
                     <div class="col-lg-12 details order-2 order-lg-1">
-                      <h3>Amenedo 101</h3>
-                      <p class="fst-italic">Tel: 4976-5324 / 6089-0272</p>
+                      <h3>Calle 467 954</h3>
+                      <!--<p class="fst-italic">Tel: 4976-5324 / 6089-0272</p>-->
                     </div>
                   </div>
                   <div class="row">
@@ -583,15 +584,15 @@
             <div class="accordion-item">
               <p class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse7" aria-expanded="false" aria-controls="flush-collapseThree">
-                  Barracas
+                  Ezpeleta
                 </button>
               </p>
               <div id="flush-collapse7" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                 <div class="accordion-body">
                   <div class="row">
                     <div class="col-lg-12 details order-2 order-lg-1">
-                      <h3>Amenedo 101</h3>
-                      <p class="fst-italic">Tel: 4976-5324 / 6089-0272</p>
+                      <h3>AAv. Mitre 4512</h3>
+                      <p class="fst-italic">Tel: 4562-1388 / 2820-8699</p>
                     </div>
                   </div>
                   <div class="row">
@@ -605,15 +606,15 @@
             <div class="accordion-item">
               <p class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse8" aria-expanded="false" aria-controls="flush-collapseThree">
-                  Barracas
+                  Gonnet
                 </button>
               </p>
               <div id="flush-collapse8" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                 <div class="accordion-body">
                   <div class="row">
                     <div class="col-lg-12 details order-2 order-lg-1">
-                      <h3>Amenedo 101</h3>
-                      <p class="fst-italic">Tel: 4976-5324 / 6089-0272</p>
+                      <h3>Calle 505 2292</h3>
+                      <p class="fst-italic">Tel: 484-7489 / 484-7512</p>
                     </div>
                   </div>
                   <div class="row">
@@ -627,15 +628,15 @@
             <div class="accordion-item">
               <p class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse9" aria-expanded="false" aria-controls="flush-collapseThree">
-                  Barracas
+                  La Plata 13
                 </button>
               </p>
               <div id="flush-collapse9" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                 <div class="accordion-body">
                   <div class="row">
                     <div class="col-lg-12 details order-2 order-lg-1">
-                      <h3>Amenedo 101</h3>
-                      <p class="fst-italic">Tel: 4976-5324 / 6089-0272</p>
+                      <h3>Avenida 13 276</h3>
+                      <p class="fst-italic">Tel: 482-0843 / 482-0886</p>
                     </div>
                   </div>
                   <div class="row">
@@ -649,15 +650,15 @@
             <div class="accordion-item">
               <p class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse10" aria-expanded="false" aria-controls="flush-collapseThree">
-                  Barracas
+                  La Plata 72
                 </button>
               </p>
               <div id="flush-collapse10" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                 <div class="accordion-body">
                   <div class="row">
                     <div class="col-lg-12 details order-2 order-lg-1">
-                      <h3>Amenedo 101</h3>
-                      <p class="fst-italic">Tel: 4976-5324 / 6089-0272</p>
+                      <h3>Avenida 72 802</h3>
+                      <p class="fst-italic">Tel: 451-9850 / 417-7439</p>
                     </div>
                   </div>
                   <div class="row">
@@ -671,15 +672,15 @@
             <div class="accordion-item">
               <p class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse11" aria-expanded="false" aria-controls="flush-collapseThree">
-                  Barracas
+                  Lomas de Zamora
                 </button>
               </p>
               <div id="flush-collapse11" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                 <div class="accordion-body">
                   <div class="row">
                     <div class="col-lg-12 details order-2 order-lg-1">
-                      <h3>Amenedo 101</h3>
-                      <p class="fst-italic">Tel: 4976-5324 / 6089-0272</p>
+                      <h3>Acevedo 208</h3>
+                      <p class="fst-italic">Tel: 2097-6821 / 7509-6660</p>
                     </div>
                   </div>
                   <div class="row">
@@ -693,15 +694,15 @@
             <div class="accordion-item">
               <p class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse12" aria-expanded="false" aria-controls="flush-collapseThree">
-                  Barracas
+                  Quilmes Centro
                 </button>
               </p>
               <div id="flush-collapse12" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                 <div class="accordion-body">
                   <div class="row">
                     <div class="col-lg-12 details order-2 order-lg-1">
-                      <h3>Amenedo 101</h3>
-                      <p class="fst-italic">Tel: 4976-5324 / 6089-0272</p>
+                      <h3>Hipólito Irigoyen 265</h3>
+                      <p class="fst-italic">Tel: 4224-1176 / 4224-4074</p>
                     </div>
                   </div>
                   <div class="row">
@@ -715,15 +716,15 @@
             <div class="accordion-item">
               <p class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse13" aria-expanded="false" aria-controls="flush-collapseThree">
-                  Barracas
+                  Ranelagh
                 </button>
               </p>
               <div id="flush-collapse13" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                 <div class="accordion-body">
                   <div class="row">
                     <div class="col-lg-12 details order-2 order-lg-1">
-                      <h3>Amenedo 101</h3>
-                      <p class="fst-italic">Tel: 4976-5324 / 6089-0272</p>
+                      <h3>Calle 365 nº 381</h3>
+                      <p class="fst-italic">Tel: 4880-4283 / 2001-2840</p>
                     </div>
                   </div>
                   <div class="row">
@@ -737,37 +738,37 @@
             <div class="accordion-item">
               <p class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse14" aria-expanded="false" aria-controls="flush-collapseThree">
-                  Barracas
+                  San Miguel
                 </button>
               </p>
               <div id="flush-collapse14" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                 <div class="accordion-body">
                   <div class="row">
                     <div class="col-lg-12 details order-2 order-lg-1">
-                      <h3>Amenedo 101</h3>
-                      <p class="fst-italic">Tel: 4976-5324 / 6089-0272</p>
+                      <h3>Sólo Delivery</h3>
+                      <p class="fst-italic">Tel: 11 3672-0031 | 11 5436-0044</p>
                     </div>
                   </div>
-                  <div class="row">
+                  <!--<div class="row">
                     <div class="col-lg-12 text-center order-1 order-lg-2" style="min-height: 30rem;">
                       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3276.2130174319586!2d-58.40885448431558!3d-34.800582275449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd30d890b9abb%3A0x13bdf3fe2336108c!2sAv.%20Amenedo%20101%2C%20B1846DGD%20Adrogu%C3%A9%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1590495855337!5m2!1ses-419!2sar" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                     </div>
-                  </div>
+                  </div>-->
                 </div>
               </div>
             </div>
             <div class="accordion-item">
               <p class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse15" aria-expanded="false" aria-controls="flush-collapseThree">
-                  Barracas
+                  Villa Urquiza
                 </button>
               </p>
               <div id="flush-collapse15" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                 <div class="accordion-body">
                   <div class="row">
                     <div class="col-lg-12 details order-2 order-lg-1">
-                      <h3>Amenedo 101</h3>
-                      <p class="fst-italic">Tel: 4976-5324 / 6089-0272</p>
+                      <h3>Avenida Monroe 5361</h3>
+                      <p class="fst-italic">Tel: 11 3809-3344 / 11 3422-2</p>
                     </div>
                   </div>
                   <div class="row">
@@ -781,15 +782,15 @@
             <div class="accordion-item">
               <p class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse16" aria-expanded="false" aria-controls="flush-collapseThree">
-                  Barracas
+                  Wilde
                 </button>
               </p>
               <div id="flush-collapse16" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                 <div class="accordion-body">
                   <div class="row">
                     <div class="col-lg-12 details order-2 order-lg-1">
-                      <h3>Amenedo 101</h3>
-                      <p class="fst-italic">Tel: 4976-5324 / 6089-0272</p>
+                      <h3>Martin Fierro 249</h3>
+                      <p class="fst-italic">Tel: 7517-6663 / 7518-9944</p>
                     </div>
                   </div>
                   <div class="row">
@@ -803,15 +804,15 @@
             <div class="accordion-item">
               <p class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse17" aria-expanded="false" aria-controls="flush-collapseThree">
-                  Barracas
+                  Hudson
                 </button>
               </p>
               <div id="flush-collapse17" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                 <div class="accordion-body">
                   <div class="row">
                     <div class="col-lg-12 details order-2 order-lg-1">
-                      <h3>Amenedo 101</h3>
-                      <p class="fst-italic">Tel: 4976-5324 / 6089-0272</p>
+                      <h3>Ombues esq. Calle 74 (Colectora Au. Bs. As. Mar del Plata)</h3>
+                      <p class="fst-italic">Tel: 15-3010-7626 / 15-3010-7627</p>
                     </div>
                   </div>
                   <div class="row">
@@ -819,6 +820,28 @@
                       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3276.2130174319586!2d-58.40885448431558!3d-34.800582275449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd30d890b9abb%3A0x13bdf3fe2336108c!2sAv.%20Amenedo%20101%2C%20B1846DGD%20Adrogu%C3%A9%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1590495855337!5m2!1ses-419!2sar" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                     </div>
                   </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <p class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse18" aria-expanded="false" aria-controls="flush-collapseThree">
+                  Palermo
+                </button>
+              </p>
+              <div id="flush-collapse18" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <div class="row">
+                    <div class="col-lg-12 details order-2 order-lg-1">
+                      <h3>Sólo Delivery</h3>
+                      <p class="fst-italic">Tel: 11 2344-2647</p>
+                    </div>
+                  </div>
+                  <!--<div class="row">
+                    <div class="col-lg-12 text-center order-1 order-lg-2" style="min-height: 30rem;">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3276.2130174319586!2d-58.40885448431558!3d-34.800582275449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd30d890b9abb%3A0x13bdf3fe2336108c!2sAv.%20Amenedo%20101%2C%20B1846DGD%20Adrogu%C3%A9%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1590495855337!5m2!1ses-419!2sar" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                  </div>-->
                 </div>
               </div>
             </div>
@@ -1436,8 +1459,11 @@
     </div>
   </footer><!-- End Footer -->
 
+  <a href="https://www.monline.com.ar/OliviaEmpanadasSucursales" target="_blank" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-whatsapp"></i></a>
+
+
   <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <!--<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>-->
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/aos/aos.js"></script>
