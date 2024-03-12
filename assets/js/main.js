@@ -215,7 +215,7 @@
    * Events slider
    */
   new Swiper('.events-slider', {
-    speed: 600,
+    speed: 1000,
     loop: true,
     autoplay: {
       delay: 5000,

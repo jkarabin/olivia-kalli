@@ -506,6 +506,7 @@ h6 {
 
 #hero .btn-menu,
 #hero .btn-book {
+  background: #F9B432;
   font-weight: 600;
   font-size: 13px;
   letter-spacing: 0.5px;
@@ -521,7 +522,7 @@ h6 {
 
 #hero .btn-menu:hover,
 #hero .btn-book:hover {
-  background: #F9B432;/*#cda45e;*/
+  background: #1a1814;/*#cda45e;*/
   color: #fff;
 }
 
