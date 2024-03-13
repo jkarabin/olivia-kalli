@@ -1797,3 +1797,10 @@ section {
 .mi-imagen-boton:hover {
   cursor: pointer;
 }
+
+.titulo-menu:hover {
+  color:#F9B432;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif !important;
+  pointer-events: none;
+}
