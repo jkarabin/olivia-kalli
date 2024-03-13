@@ -671,7 +671,7 @@ section {
 }
 
 .section-title {
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 }
 
 .section-title h2 {
@@ -1803,4 +1803,30 @@ section {
   text-decoration: none;
   font-family: "Poppins", sans-serif !important;
   pointer-events: none;
+}
+
+.cards-para-pedir{
+  background: #1A1814;
+  min-height: 200px;
+}
+
+.cards-para-pedir:hover{
+  background: rgba(249, 180, 50, 0.38);
+  color:#1A1814;
+}
+
+.btn-cards-pedir{
+  color:#fff;
+  padding: 3.5% 7.5%;
+  font-size: 20px;
+  background: #F9B432;
+  border-radius: 50px;
+}
+
+.btn-cards-pedir:hover{
+  color:#fff;
+  padding: 3.5% 7.5%;
+  font-size: 20px;
+  background: #1A1814;
+  border: 2px solid #F9B432;
 }
