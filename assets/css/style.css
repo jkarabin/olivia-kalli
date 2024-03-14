@@ -770,7 +770,14 @@ section {
 # About
 --------------------------------------------------------------*/
 .about {
-  background: url("../img/about-bg.jpg") center center;
+  background: url("../img/about-bg.png") center center;
+  background-size: cover;
+  position: relative;
+  padding: 80px 0;
+}
+
+.about2 {
+  background: url("../img/pizza-ruedita.png") center center;
   background-size: cover;
   position: relative;
   padding: 80px 0;
@@ -1769,6 +1776,7 @@ section {
   color: #F9B432;/*#cda45e;*/
   background-color: #0C0B09;
   border: 1px solid;
+  border-bottom: none;
 }
 
 .accordion-button:not(.collapsed){
