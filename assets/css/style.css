@@ -967,6 +967,7 @@ section {
   display: flex;
   justify-content: space-between;
   position: relative;
+  font-size: 20px;
 }
 
 .menu .menu-content::after {
@@ -1007,9 +1008,9 @@ section {
 .menu .menu-ingredients {
   /*margin-left: 85px;*/
   font-style: italic;
-  font-size: 14px;
   font-family: "Poppins", sans-serif;
   color: rgba(255, 255, 255, 0.5);
+  font-size: 17px;
 }
 
 /*--------------------------------------------------------------
@@ -1078,7 +1079,7 @@ section {
 # Events
 --------------------------------------------------------------*/
 .events {
-  background: url(../img/events-bg.jpg) center center no-repeat;
+  background: url(../img/pizza-y-caja.png) center center no-repeat;
   background-size: cover;
   position: relative;
 }
@@ -1829,4 +1830,8 @@ section {
   font-size: 20px;
   background: #1A1814;
   border: 2px solid #F9B432;
+}
+
+.titulos-comida{
+  font-size: 130%;font-weight: bold;letter-spacing: 2px;
 }
