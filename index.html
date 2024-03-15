@@ -75,10 +75,10 @@
        <ul>
          <li><a class="nav-link scrollto active" href="#hero">Inicio</a></li>
          <li><a class="nav-link scrollto" href="#menu">Menú</a></li>
-         <li><a class="nav-link scrollto" href="#events">Sugerencias</a></li>
+         <!--<li><a class="nav-link scrollto" href="#events">Sugerencias</a></li>-->
          <li><a class="nav-link scrollto" href="#specials">Sucursales</a></li>
          <li><a class="nav-link scrollto" href="#book-a-table">Contacto</a></li>
-         <li><a class="nav-link scrollto" href="#gallery">Galería</a></li>
+         <!--<li><a class="nav-link scrollto" href="#gallery">Galería</a></li>-->
          <!--<li><a class="nav-link scrollto" href="#about">About</a></li>
          <li><a class="nav-link scrollto" href="#chefs">Chefs</a></li>
          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
@@ -901,7 +901,7 @@
                     <p><span>¡No podés dejar de probarla!</span></p>
                   </div>
                   <p class="fst-italic">
-                    ¿Qué estás esperamndo?
+                    ¿Qué estás esperando?
                   </p>
                   <p style="margin-bottom: 10%;">
                     La Nutella ha sido venerada durante años y es una de las primeras elecciones a la hora de satisfacer los antojos dulces. Acompañada por un mix de cereales y una masa artesanal especial, esta Pizza llegó para transformar por completo la hora del postre.
@@ -1571,20 +1571,33 @@
           <p>Dejanos tu mensaje</p>
         </div>
 
-        <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
+        <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100" name="formulario" netlify>
           <div class="row">
-            <div class="col-lg-4 col-md-6 form-group">
+            <div class="col-lg-3 col-md-6 form-group">
               <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
               <div class="validate"></div>
             </div>
-            <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+            <div class="col-lg-3 col-md-6 form-group mt-3 mt-md-0">
               <input type="email" class="form-control" name="email" id="email" placeholder="Email" data-rule="email" data-msg="Please enter a valid email">
               <div class="validate"></div>
             </div>
-            <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+            <div class="col-lg-3 col-md-6 form-group mt-3 mt-md-0">
               <input type="text" class="form-control" name="phone" id="phone" placeholder="Teléfono" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
               <div class="validate"></div>
             </div>
+            <div class="col-lg-3 col-md-6 form-group mt-3 mt-md-0">
+              <select class="form-control" id="exampleFormControlSelect1" style="border: 1px solid #625b4b;color: #625b4b;border-radius: 0;height: 45px;background: #0c0b09;box-shadow: none;font-size: 14px;" onchange="showHideDiv()">
+                <option value="">Motivo</option>
+                <option value="Franquicia">Franquicia</option>
+                <option value="Reclamo">Reclamo</option>
+                <option value="Sugerencia">Sugerencia</option>
+                <option value="Empleo">Empleo-CV</option>
+                <option value="Otro">Otro</option>
+              </select>
+              <div class="validate"></div>
+            </div>
+
+
             <!--<div class="col-lg-4 col-md-6 form-group mt-3">
               <input type="text" name="date" class="form-control" id="date" placeholder="Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
               <div class="validate"></div>
@@ -1602,13 +1615,42 @@
             <textarea class="form-control" name="message" rows="5" placeholder="Mensaje"></textarea>
             <div class="validate"></div>
           </div>
+          <div class="col-lg-3 col-md-6 form-group" id="fileUploadDivLabel">
+            <label class="label-subir-cv" for="archivo">Adjuntá tu Curriculum</label>
+          </div>
+          <div class="col-lg-3 col-md-6 form-group" id="fileUploadDiv" style="display: none;margin-top: 1%;">
+            <input accept="application/pdf" type="file" name="archivo" class="form-control custom-file-input" id="archivo"
+                   style="background: #F9B432;text-align: center;border-radius: 50px;color: #1A1814;padding: 10px;">
+            <div class="validate"></div>
+          </div>
+
           <div class="mb-3">
             <div class="loading">Loading</div>
             <div class="error-message">Error al enviar mensaje.</div>
             <div class="sent-message">Su mensaje fue enviado correctamente, muchas gracias.</div>
           </div>
-          <div class="text-center"><button type="submit">Enviar</button></div>
+          <div class="text-center" class="btn-enviar-mensaje"><button type="submit">Enviar</button></div>
+
         </form>
+
+        <script>
+          function showHideDiv() {
+            var selectElement = document.getElementById('exampleFormControlSelect1');
+            var selectedOption = selectElement.options[selectElement.selectedIndex].value;
+            var fileUploadDiv = document.getElementById('fileUploadDiv');
+            var fileUploadDivLabel = document.getElementById('fileUploadDivLabel');
+
+            if (selectedOption === 'Empleo') {
+              fileUploadDiv.style.display = 'block';
+              fileUploadDivLabel.style.display = 'block';
+            } else {
+              fileUploadDiv.style.display = 'none';
+              fileUploadDivLabel.style.display = 'none';
+              document.getElementById("archivo").value = "";
+
+            }
+          }
+        </script>
 
       </div>
     </section><!-- End Book A Table Section -->
@@ -1698,13 +1740,13 @@
     </section>-->
 
     <!-- ======= Gallery Section ======= -->
-    <section id="gallery" class="gallery" style="background: #664B19;">
+    <!--<section id="gallery" class="gallery" style="background: #664B19;">
 
       <div class="container" data-aos="fade-up">
-        <!--<div class="section-title">
-          <h2>Galería</h2>
-          <p>Algunas fotos de nuestras sucursales</p>
-        </div>-->
+        <div class="section-title">
+          <h2>redes</h2>
+          <p>¡Seguinos en Instagram!</p>
+        </div>
       </div>
 
       <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
@@ -1741,7 +1783,7 @@
                 <img src="assets/img/gallery/gallery-4.png" alt="" class="img-fluid">
               </a>
             </div>
-          </div>
+          </div>-->
 
           <!--<div class="col-lg-3 col-md-4">
             <div class="gallery-item">
@@ -1773,12 +1815,12 @@
                 <img src="assets/img/gallery/gallery-2.png" alt="" class="img-fluid">
               </a>
             </div>
-          </div>-->
+          </div>
 
         </div>
 
       </div>
-    </section><!-- End Gallery Section -->
+    </section>--><!-- End Gallery Section -->
 
     <!-- ======= Chefs Section ======= -->
     <!--<section id="chefs" class="chefs">
@@ -1981,7 +2023,7 @@
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="#hero">Inicio</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#menu">Menú</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#events">Sugerencias</a></li>
+              <!--<li><i class="bx bx-chevron-right"></i> <a href="#events">Sugerencias</a></li>-->
               <li><i class="bx bx-chevron-right"></i> <a href="#specials">Sucursales</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#book-a-table">Contacto</a></li>
               <!--<li><i class="bx bx-chevron-right"></i> <a href="#gallery">Galería</a></li>-->

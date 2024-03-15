@@ -195,7 +195,7 @@ h6 {
 }
 
 #header.header-scrolled {
-  top: 0;
+  /*top: 0;*/
   background: rgba(0, 0, 0, 0.85);
   border-bottom: 1px solid #37332a;
 }
@@ -1842,4 +1842,12 @@ section {
 
 .titulos-comida{
   font-size: 130%;font-weight: bold;letter-spacing: 2px;
+}
+
+.form-control::file-selector-button{
+  display: none;
+}
+
+.label-subir-cv{
+  margin-top: 5%;font-size: 25px;color: #F9B432;
 }
