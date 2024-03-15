@@ -1572,7 +1572,7 @@
         </div>
 
         <!--<form action="forms/book-a-table.php" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100" name="formulario" netlify>-->
-        <form class="php-email-form" data-aos="fade-up" data-aos-delay="100" name="formulario" netlify>
+        <form class="php-email-form" data-aos="fade-up" data-aos-delay="100" name="formulario" netlify method="post" data-netlify="true" action="/inner-page.html">
           <div class="row">
             <div class="col-lg-3 col-md-6 form-group">
               <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
@@ -1616,7 +1616,7 @@
             <textarea class="form-control" name="message" rows="5" placeholder="Mensaje"></textarea>
             <div class="validate"></div>
           </div>
-          <div class="col-lg-3 col-md-6 form-group" id="fileUploadDivLabel">
+          <div class="col-lg-3 col-md-6 form-group" id="fileUploadDivLabel" style="display: none;">
             <label class="label-subir-cv" for="archivo">Adjuntá tu Curriculum</label>
           </div>
           <div class="col-lg-3 col-md-6 form-group" id="fileUploadDiv" style="display: none;margin-top: 1%;">
