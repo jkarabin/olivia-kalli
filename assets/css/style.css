@@ -1849,5 +1849,14 @@ section {
 }
 
 .label-subir-cv{
-  margin-top: 5%;font-size: 25px;color: #F9B432;
+  margin-top: 5%;font-size: 20px;color: #F9B432;
+}
+
+.label-subir-cv:hover{
+  margin-top: 5%;
+  font-size: 20px;
+  color:#fff;
+  cursor: pointer;
+  background: #1A1814;
+  border: 2px solid #F9B432;
 }
