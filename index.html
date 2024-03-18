@@ -1575,25 +1575,25 @@
         <form class="php-email-form" data-aos="fade-up" data-aos-delay="100" name="formulario" netlify method="post" data-netlify="true" action="/inner-page.html">
           <div class="row">
             <div class="col-lg-3 col-md-6 form-group">
-              <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <input type="text" name="Nombre" class="form-control" id="Nombre" placeholder="Nombre" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required>
               <div class="validate"></div>
             </div>
             <div class="col-lg-3 col-md-6 form-group mt-3 mt-md-0">
-              <input type="email" class="form-control" name="email" id="email" placeholder="Email" data-rule="email" data-msg="Please enter a valid email">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Email" data-rule="email" data-msg="Please enter a valid email" required>
               <div class="validate"></div>
             </div>
             <div class="col-lg-3 col-md-6 form-group mt-3 mt-md-0">
-              <input type="text" class="form-control" name="phone" id="phone" placeholder="Teléfono" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <input type="text" class="form-control" name="Teléfono" id="Teléfono" placeholder="Teléfono" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required>
               <div class="validate"></div>
             </div>
             <div class="col-lg-3 col-md-6 form-group mt-3 mt-md-0">
-              <select class="form-control" id="exampleFormControlSelect1" style="border: 1px solid #625b4b;color: #a49b89;border-radius: 0;height: 45px;background: #0c0b09;box-shadow: none;font-size: 14px;" onchange="showHideDiv()">
-                <option value="">Motivo</option>
-                <option value="Franquicia">Franquicia</option>
-                <option value="Reclamo">Reclamo</option>
-                <option value="Sugerencia">Sugerencia</option>
-                <option value="Empleo">Empleo-CV</option>
-                <option value="Otro">Otro</option>
+              <select name="Motivo" class="form-control" id="exampleFormControlSelect1" style="border: 1px solid #625b4b;color: #a49b89;border-radius: 0;height: 45px;background: #0c0b09;box-shadow: none;font-size: 14px;" onchange="showHideDiv()" required>
+                <option name="Motivo" value="">Motivo</option>
+                <option name="Motivo" value="Franquicia">Franquicia</option>
+                <option name="Motivo" value="Reclamo">Reclamo</option>
+                <option name="Motivo" value="Sugerencia">Sugerencia</option>
+                <option name="Motivo" value="Empleo">Empleo-CV</option>
+                <option name="Motivo" value="Otro">Otro</option>
               </select>
               <div class="validate"></div>
             </div>
@@ -1613,7 +1613,7 @@
             </div>-->
           </div>
           <div class="form-group mt-3">
-            <textarea class="form-control" name="message" rows="5" placeholder="Mensaje"></textarea>
+            <textarea class="form-control" name="message" rows="5" placeholder="Mensaje" required></textarea>
             <div class="validate"></div>
           </div>
           <div class="col-lg-3 col-md-6 form-group" id="fileUploadDivLabel" style="display: none;">
