@@ -1479,13 +1479,27 @@
             <div class="section-title">
               <p>Sobre Nosotros</p>
             </div>
-            <p>El primer local de Olivia abrió sus puertas en 2004. Desde entonces, nos hemos especializado en la creación y distribución de dos de los platos más populares en la cocina argentina.
+            <p style="font-size: 90%;">El primer local de Olivia abrió sus puertas en 2004. Desde entonces, nos hemos especializado en la creación y distribución de dos de los platos más populares en la cocina argentina.
               <br><br>
               Nuestra producción se destaca por el uso de tecnología moderna en instalaciones propias y por la meticulosa selección de ingredientes de primera calidad, lo que resulta en Pizzas y Empanadas reconocidas por su exquisito sabor.
               <br><br>
               Ofrecemos una amplia variedad de productos en ambas categorías, que van desde las versiones clásicas hasta las especiales, integrales, árabes y veganas para satisfacer todos los paladares.
               <br><br>
               Actualmente contamos con 14 franquicias y 5 locales propios distribuidos en diferentes localidades de Zona Sur, Zona Norte y Capital Federal.
+              <br><br>
+              Seguinos en nuestras redes
+              <br><br>
+              <div style="display: flex">
+                <a style="float:left; padding: 2% 3%;" href="https://www.instagram.com/olivia_empanadas_y_pizzas/" target="_blank" class="btn-menu animated fadeInUp scrollto btn-cards-pedir" >
+                  <img src="assets/img/icons/icons8-instagram-50.png" alt="Menú" style=" height: 35px;width: 35px;margin-top: -6px;">
+                  <span style="padding-right: 10px;">Instagram</span>
+                </a>
+                <a style="float:right; margin-left:10px; padding: 2% 3%;" href="https://www.facebook.com/oliviapizzasyempanadas/" target="_blank" class="btn-menu animated fadeInUp scrollto btn-cards-pedir" >
+                  <img src="assets/img/icons/icons8-facebook-50.png" alt="Menú" style=" height: 35px;width: 35px;margin-top: -6px;">
+                  <span style="padding-right: 10px;">Facebook</span>
+                </a>
+              </div>
+
             </p>
 
             <!--<p class="fst-italic">
@@ -1632,7 +1646,7 @@
             <div class="error-message">Error al enviar mensaje.</div>
             <div class="sent-message">Su mensaje fue enviado correctamente, muchas gracias.</div>
           </div>
-          <div class="text-center" class="btn-enviar-mensaje"><button type="submit">Enviar</button></div>
+          <div class="text-center" class="btn-enviar-mensaje"><button type="submit" id="btn-enviar">Enviar</button></div>
 
         </form>
 
@@ -1652,7 +1666,7 @@
               fileUploadDivLabel.style.display = 'none';
               document.getElementById("archivo").value = "";
               document.getElementById('file-name').textContent = "";
-              document.getElementById('label-cv').textContent = "";
+              document.getElementById('label-cv').textContent = "  ";
             }
           }
         </script>
@@ -1988,13 +2002,14 @@
       <div class="container">
         <div class="row">
 
-          <div class="col-lg-4 col-md-6">
+          <div class="col-lg-3 col-md-6">
             <div class="footer-info">
-              <h3>Olivia</h3>
+              <a href="https://kallidigital.com.ar/" class="logo me-auto me-lg-0"><img src="assets/img/designed_by.png" alt="" class="img-fluid"></a>
+              <!--<h3>Olivia</h3>
               <p>
                 Empanadas &<br>
                 Pizzas<br><br>
-              </p>
+              </p>-->
             </div>
           </div>
 
@@ -2009,21 +2024,33 @@
             </ul>
           </div>-->
 
-          <div class="col-lg-4 col-md-6 footer-newsletter" style="margin: 0% 0 10% 0;">
+          <div class="col-lg-3 col-md-6 footer-newsletter" style="margin: 0% 0 10% 0;">
             <p>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
+              <strong>Teléfono:</strong> +54 911 1234 5678<br>
+              <strong>Email: </strong><a href="mailto:fabrica@oliviapizzas.com">fabrica@oliviapizzas.com</a><br>
             </p>
             <div class="social-links mt-3">
-              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="https://www.facebook.com/oliviapizzasyempanadas/" target="_blank" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="https://www.instagram.com/olivia_empanadas_y_pizzas/" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
               <!--<a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
               <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
               <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>-->
             </div>
           </div>
+
+          <div class="col-lg-3 col-md-6 footer-newsletter" style="margin: 0 0 10% 0;">
+            <p>
+              <strong style="font-size: 25px;">HORARIOS</strong><br>
+            </p>
+            <div class="social-links mt-3">
+              <p>
+                Lunes a Sábados: de 11:30hs. a 14:30hs. y de 19:00hs. a 23:30hs.<br><br>
+                Domingos y feriados: de 19:00hs. a 23:30hs.
+              </p>
+            </div>
+          </div>
           
-          <div class="col-lg-4 col-md-6 footer-links">
+          <div class="col-lg-3 col-md-6 footer-links">
             <h4>Links Útiles</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="#hero">Inicio</a></li>
@@ -2043,12 +2070,12 @@
       <div class="copyright" style="color: #424242;">
         &copy; Copyright <strong><span>Restaurantly</span></strong>. All Rights Reserved
       </div>
-      <div class="credits">
+      <div class="credits" style="color: #424242;">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/restaurantly-restaurant-template/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>, Adapted by <a href="https://kallidigital.com.ar/">Kalli Digital</a>
+        Designed by <a href="https://bootstrapmade.com/" style="color: #424242;">BootstrapMade</a>, Adapted by <a href="https://kallidigital.com.ar/">Kalli Digital</a>
       </div>
     </div>
   </footer><!-- End Footer -->
