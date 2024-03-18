@@ -879,7 +879,7 @@
                     culminá tu experiencia con el postre perfecto: unas deliciosas Franui.
                     Las capas de chocolate cediendo ante el frescor de las frambuesas en cada bocado generan una sensación única que merece la pena disfrutar.
                   </p>
-                  <a href="https://www.monline.com.ar/OliviaEmpanadasSucursales" target="_blank" class="btn-menu animated fadeInUp scrollto btn-cards-pedir">
+                  <a href="https://www.monline.com.ar/OliviaEmpanadasSucursales" target="_blank" class="btn-menu animated fadeInUp scrollto btn-cards-pedir" style="display: table;margin: 0 auto;">
                     <span style="padding-right: 10px;">HACER PEDIDO</span>
                     <img src="assets/img/icons/icons8-whatsapp-50.png" alt="Menú" style=" height: 35px;width: 35px;margin-top: -6px;">
                   </a>
@@ -896,7 +896,7 @@
                   <img src="assets/img/pizzanutella.png" class="img-fluid" alt="">
                 </div>
                 <div class="col-lg-6 pt-4 pt-lg-0 content">
-                  <h3>PIZZA DE NUTELLA</h3>
+                  <h3>Pizza de NUTELLA</h3>
                   <div class="price">
                     <p><span>¡No podés dejar de probarla!</span></p>
                   </div>
@@ -906,7 +906,7 @@
                   <p style="margin-bottom: 10%;">
                     La Nutella ha sido venerada durante años y es una de las primeras elecciones a la hora de satisfacer los antojos dulces. Acompañada por un mix de cereales y una masa artesanal especial, esta Pizza llegó para transformar por completo la hora del postre.
                   </p>
-                  <a href="https://www.monline.com.ar/OliviaEmpanadasSucursales" target="_blank" class="btn-menu animated fadeInUp scrollto btn-cards-pedir">
+                  <a href="https://www.monline.com.ar/OliviaEmpanadasSucursales" target="_blank" class="btn-menu animated fadeInUp scrollto btn-cards-pedir" style="display: table;margin: 0 auto;">
                     <span style="padding-right: 10px;">HACER PEDIDO</span>
                     <img src="assets/img/icons/icons8-whatsapp-50.png" alt="Menú" style=" height: 35px;width: 35px;margin-top: -6px;">
                   </a>
@@ -1518,7 +1518,7 @@
           <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="100">
 
             <div class="section-title">
-              <p>¡FORMÁ PARTE DE LA #FAMILIAOLIVIA!</p>
+              <p>¡Formá parte de la #FAMILIAOLIVIA!</p>
             </div>
             <p>
               ¿Alguna vez soñaste con dirigir tu propio proyecto? Con una franquicia de Olivia podes hacerlo realidad.
@@ -1617,11 +1617,12 @@
             <div class="validate"></div>
           </div>
           <div class="col-lg-3 col-md-6 form-group" id="fileUploadDivLabel" style="display: none;">
-            <label class="label-subir-cv" for="archivo" style="background: #F9B432;text-align: center;border-radius: 50px;color: #1A1814;padding: 10px;">Adjuntá tu Curriculum</label>
+            <label class="label-subir-cv" for="archivo" style="background: #F9B432;text-align: center;border-radius: 50px;color: #1A1814;padding: 10px 30px;">Adjuntá tu Curriculum</label>
           </div>
           <div class="col-lg-3 col-md-6 form-group" id="fileUploadDiv" style="display: none;margin-top: 1%;">
             <input accept="application/pdf" type="file" name="archivo" class="form-control custom-file-input" id="archivo"
-                   style="padding-top: 10px;">
+                   style="padding-top: 10px;display: none;">
+            <span id="file-name"></span>
             <div class="validate"></div>
           </div>
 
@@ -1649,7 +1650,7 @@
               fileUploadDiv.style.display = 'none';
               fileUploadDivLabel.style.display = 'none';
               document.getElementById("archivo").value = "";
-
+              document.getElementById('file-name').textContent = "";
             }
           }
         </script>
