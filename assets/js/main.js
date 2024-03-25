@@ -277,13 +277,6 @@
     })
   });
 
-  //document.getElementById('btnAdrogué').addEventListener('click', function() {
-    //document.getElementById('mapAdrogue').src = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3276.2130174319586!2d-58.40885448431558!3d-34.800582275449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd30d890b9abb%3A0x13bdf3fe2336108c!2sAv.%20Amenedo%20101%2C%20B1846DGD%20Adrogu%C3%A9%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1590495855337!5m2!1ses-419!2sar'; // Reemplaza 'NUEVO_SRC_AQUI' con la URL del mapa que deseas mostrar
-  //});
-
-  //document.getElementById('btnAvellaneda').addEventListener('click', function() {
-    //document.getElementById('mapAvellaneda').src = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.3329040808376!2d-58.354509384333916!3d-34.671546580441955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3333ee176c6cd%3A0xf9841fd057e585f!2sAv.%20Bartolom%C3%A9%20Mitre%202176%2C%20B1873AMH%20Crucecita%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1629399478257!5m2!1ses-419!2sar'; // Reemplaza 'NUEVO_SRC_AQUI' con la URL del mapa que deseas mostrar
-  //});
 
   document.getElementById('archivo').addEventListener('change', function(e) {
     var fileName = e.target.files[0].name;
