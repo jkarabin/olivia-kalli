@@ -1858,6 +1858,11 @@ section {
 
 .label-subir-cv{
   margin-top: 5%;font-size: 20px;color: #F9B432;
+  background: #F9B432;
+  text-align: center;
+  border-radius: 50px;
+  color: #fff;
+  padding: 10px 30px;
 }
 
 .label-subir-cv:hover{
@@ -1865,5 +1870,5 @@ section {
   font-size: 20px;
   color:#fff;
   cursor: pointer;
-  background: #1a1814;
+  background: #f9b33283;
 }

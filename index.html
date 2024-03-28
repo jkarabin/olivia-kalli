@@ -1678,10 +1678,10 @@
             <div class="validate"></div>
           </div>
           <div class="col-lg-3 col-md-6 form-group" id="fileUploadDivLabel" style="display: none;">
-            <label id="label-cv" class="label-subir-cv" for="archivo" style="background: #F9B432;text-align: center;border-radius: 50px;color: #1A1814;padding: 10px 30px;">Adjuntá tu Curriculum</label>
+            <label id="label-cv" class="label-subir-cv" for="archivo">Adjuntar</label>
           </div>
           <div class="col-lg-3 col-md-6 form-group" id="fileUploadDiv" style="display: none;margin-top: 1%;">
-            <input accept="application/pdf" type="file" name="archivo" class="form-control custom-file-input" id="archivo"
+            <input accept="application/pdf,image/*" type="file" name="archivo" class="form-control custom-file-input" id="archivo"
                    style="padding-top: 10px;display: none;">
             <span id="file-name"></span>
             <div class="validate"></div>
@@ -1703,17 +1703,24 @@
             var selectedOption = selectElement.options[selectElement.selectedIndex].value;
             var fileUploadDiv = document.getElementById('fileUploadDiv');
             var fileUploadDivLabel = document.getElementById('fileUploadDivLabel');
+            document.getElementById("archivo").value = "";
+            document.getElementById('file-name').textContent = "";
 
             if (selectedOption === 'Empleo') {
               fileUploadDiv.style.display = 'block';
               fileUploadDivLabel.style.display = 'block';
               document.getElementById('label-cv').textContent = "Adjuntá tu Curriculum";
             } else {
-              fileUploadDiv.style.display = 'none';
-              fileUploadDivLabel.style.display = 'none';
+              if(!selectedOption){
+                fileUploadDiv.style.display = 'none';
+                fileUploadDivLabel.style.display = 'none';
+              }else{
               document.getElementById("archivo").value = "";
-              document.getElementById('file-name').textContent = "";
-              document.getElementById('label-cv').textContent = "  ";
+              fileUploadDiv.style.display = 'block';
+              fileUploadDivLabel.style.display = 'block';
+              document.getElementById('label-cv').textContent = "Adjuntar archivo";
+              }
+              
             }
           }
         </script>
