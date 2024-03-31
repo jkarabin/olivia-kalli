@@ -1634,7 +1634,16 @@
         </div>
 
         <!--<form action="forms/book-a-table.php" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100" name="formulario" netlify>-->
-        <form class="php-email-form" data-aos="fade-up" data-aos-delay="100" name="formulario" netlify method="post" data-netlify="true" action="/inner-page.html">
+        <form class="php-email-form"
+         data-aos="fade-up" 
+         data-aos-delay="100" 
+         name="formulario" 
+         netlify 
+         method="POST" 
+         enctype="multipart/form-data" 
+         data-netlify="true" 
+         data-netlify-recaptcha="true" 
+         action="/inner-page.html">
           <div class="row">
             <div class="col-lg-3 col-md-6 form-group">
               <input type="text" name="Nombre" class="form-control" id="Nombre" placeholder="Nombre" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required>
@@ -1682,7 +1691,7 @@
             <label id="label-cv" class="label-subir-cv" for="archivo">Adjuntar</label>
           </div>
           <div class="col-lg-3 col-md-6 form-group" id="fileUploadDiv" style="display: none;margin-top: 1%;">
-            <input accept="application/pdf,image/*" type="file" name="archivo" class="form-control custom-file-input" id="archivo"
+            <input accept="application/pdf,image/*" type="file" name="archivo" class="form-control custom-file-input" id="archivo" 
                    style="padding-top: 10px;display: none;">
             <span id="file-name"></span>
             <div class="validate"></div>
@@ -1696,7 +1705,7 @@
           </div>
 
           <div data-netlify-recaptcha="true"></div>
-          
+
           <div class="text-center" class="btn-enviar-mensaje"><button type="submit" id="btn-enviar">Enviar</button></div>
 
         </form>
