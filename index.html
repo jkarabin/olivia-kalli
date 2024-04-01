@@ -1635,15 +1635,22 @@
 
         <!--<form action="forms/book-a-table.php" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100" name="formulario" netlify>-->
         <form class="php-email-form"
-         data-aos="fade-up" 
-         data-aos-delay="100" 
-         name="formulario" 
-         netlify 
-         method="POST" 
-         enctype="multipart/form-data" 
-         data-netlify="true" 
-         data-netlify-recaptcha="true" 
-         action="/inner-page.html">
+          data-aos="fade-up" 
+          data-aos-delay="100" 
+          name="formulario" 
+          method="POST" 
+          enctype="multipart/form-data"
+          netlify
+          data-netlify="true" 
+          netlify-honeypot="bot-field"
+          action="/inner-page.html">
+
+          <p style="display: none;">
+            <label>
+              Don't fill this out if you're human: <input name="bot-field" />
+            </label>
+          </p>
+
           <div class="row">
             <div class="col-lg-3 col-md-6 form-group">
               <input type="text" name="Nombre" class="form-control" id="Nombre" placeholder="Nombre" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required>
@@ -1669,7 +1676,6 @@
               <div class="validate"></div>
             </div>
 
-
             <!--<div class="col-lg-4 col-md-6 form-group mt-3">
               <input type="text" name="date" class="form-control" id="date" placeholder="Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
               <div class="validate"></div>
@@ -1682,6 +1688,7 @@
               <input type="number" class="form-control" name="people" id="people" placeholder="# of people" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
               <div class="validate"></div>
             </div>-->
+
           </div>
           <div class="form-group mt-3">
             <textarea class="form-control" name="message" rows="5" placeholder="Mensaje" required></textarea>
@@ -1698,13 +1705,11 @@
           </div>
 
 
-          <div class="mb-3">
+          <!--<div class="mb-3">
             <div class="loading">Loading</div>
             <div class="error-message">Error al enviar mensaje.</div>
             <div class="sent-message">Su mensaje fue enviado correctamente, muchas gracias.</div>
-          </div>
-
-          <div data-netlify-recaptcha="true"></div>
+          </div>-->
 
           <div class="text-center" class="btn-enviar-mensaje"><button type="submit" id="btn-enviar">Enviar</button></div>
 
