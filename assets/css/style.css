@@ -771,7 +771,7 @@ section {
 # About
 --------------------------------------------------------------*/
 .about {
-  background: url("../img/about-bg.png") center center;
+  background: url("../img/empanadas_latas_fondo.png") center center;
   background-size: cover;
   position: relative;
   padding: 80px 0;
@@ -1087,7 +1087,7 @@ section {
 # Events
 --------------------------------------------------------------*/
 .events {
-  background: url(../img/pizza-y-caja.png) center center no-repeat;
+  background: url(../img/empanadas_latas_fondo.png) center center no-repeat;
   background-size: cover;
   position: relative;
 }
