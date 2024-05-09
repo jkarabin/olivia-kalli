@@ -112,12 +112,11 @@ h6 {
 .back-to-top:hover {
   /*background: #F9B432;
   color: #1a1814;*/
-  background: #18a24b;
-  color: #fff;
+  background: #fff;
 }
 
 .back-to-top:hover i {
-  color: #0C0B09;
+  color: #26D366;
 }
 
 .back-to-top.active {
